@@ -1,0 +1,214 @@
+body {
+    font-family: Georgia,sans-serif, 'Segoe UI', 'Open Sans', 'Helvetica';
+    background-image: linear-gradient(90deg, #0575E6 0%, #021B79 100%);
+    color: #102a42;
+    line-height: 1.5;
+    font-size: 1rem;
+    min-width: 800px;
+  }
+
+
+  h2
+   {
+    color: #f3f4f7;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+    line-height: 1.5;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bolder;
+  }
+ 
+  p {
+    font-weight: 600;
+    font-family:   sans-serif;
+    margin-bottom: 1.3rem;
+  }
+
+  /*Prompt */
+  .alert {
+    margin-bottom: .5rem;
+    height: 2rem;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 0.25rem;
+    letter-spacing: .1rem;
+    text-transform: capitalize;
+  }
+  .alert-danger {
+    transition:  all 0.3s linear;
+    font-size: 1rem;
+    color: rgb(128, 51, 51);
+    text-transform: uppercase;
+    
+  }
+  .alert-success {
+    transition:  all 0.3s linear;
+    font-size: 1rem;
+    color: #27cd37f7;
+    text-transform: uppercase;
+  }
+ 
+  
+  /* section */
+  .article {
+    padding: 5rem 0;
+  }
+  
+  .container {
+    width: 95vw;
+    margin: 0 auto;
+    max-width: 35rem;
+    margin-top: 5rem;
+    border-radius: 6px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition:  all 0.3s linear;
+    background: radial-gradient(
+      75% 75% at 89% 10%,
+      rgba(198, 201, 201, 0.332) 0%,
+      rgba(172, 172, 174, 0.332) 100%
+    );
+    backdrop-filter: blur(20px);
+    padding: 2rem;
+  }
+  .container:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  
+  /* input and button Container*/
+
+  .input-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Input Field*/
+  .grocery-input {
+    padding: 0.25rem;
+    padding-left: 1rem;
+    background: #f1f5f8;
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+    border-color: transparent;
+    font-size: 1rem;
+    flex: 1 0 auto;
+    color: black;
+  }
+  .grocery-input::placeholder {
+    color: #617d98;
+  }
+
+  /*Submit Button*/
+  .submit-btn {
+    background: #4a74e8;
+    border-color: transparent;
+    flex: 0 0 5rem;
+    display: grid;
+    align-items: center;
+    padding: 0.25rem;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+    cursor: pointer;
+    content: #49a6e9;
+    transition:  all 0.3s linear;
+    font-size: 0.85rem;
+  }
+  .submit-btn:hover {
+    background: #49a6e9;
+    color: white;
+  }
+  
+
+  /*Item Container*/
+  .item-container {
+    margin-top: 2rem;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    transition:  all 0.3s linear;
+    padding: 0.25rem 1rem;
+    border-radius: .25rem;
+    text-transform: capitalize;
+  }
+
+  .itemName {
+    margin-bottom: 0;
+    color: #c3c9ca;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    transition:  all 0.3s linear;
+  }
+
+
+  .item:hover {
+    background: #d6d8d9;
+  }
+
+  .item:hover .itemName{
+    color: black;
+  }
+
+
+
+/*Edit and Submit Button styles*/
+
+  .edit,
+  .delete {
+    background: transparent;
+    border-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 2px;
+    margin-left: 5px;
+    transition:  all 0.3s linear;
+    justify-content: space-evenly;
+  }
+  .edit {
+    color: #21ba2e;
+  }
+  .edit:hover {
+    color: rgb(42, 209, 56);
+  }
+  .delete {
+    color: rgb(229, 31, 31);
+  }
+  .delete:hover {
+    color: rgb(187, 37, 37);
+  }
+
+
+
+/*Clear Button styles*/
+  .clear {
+    text-transform: capitalize;
+    width: 10rem;
+    height: 1.5rem;
+    display: grid;
+    align-items: center;
+    color: rgb(30, 30, 30);
+    border-color: transparent;
+    background-color: rgb(220, 72, 72);;
+    margin: 0 auto;
+    font-size: 0.85rem;
+    letter-spacing: .1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition:  all 0.3s linear;
+    margin-top: 1.25rem;
+  }
+
+  .clear:hover {
+    color: white;
+    background-color: rgb(230, 114, 116);;
+  } 
